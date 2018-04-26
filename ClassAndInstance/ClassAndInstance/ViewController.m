@@ -41,7 +41,7 @@ void TestMetaClass(id self,SEL _cmd)
 - (void)ex_registerClassPair
 {
     Class newClass = objc_allocateClassPair([NSError class], "TestClass", 0);
-    class_getProperty(<#Class  _Nullable __unsafe_unretained cls#>, <#const char * _Nonnull name#>)
+    class_replaceMethod(<#Class  _Nullable __unsafe_unretained cls#>, <#SEL  _Nonnull name#>, <#IMP  _Nonnull imp#>, <#const char * _Nullable types#>)
 }
 
 
