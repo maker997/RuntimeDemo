@@ -35,14 +35,9 @@ void TestMetaClass(id self,SEL _cmd)
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    objc_setAssociatedObject(<#id  _Nonnull object#>, <#const void * _Nonnull key#>, <#id  _Nullable value#>, <#objc_AssociationPolicy policy#>)
 }
 
-- (void)ex_registerClassPair
-{
-    Class newClass = objc_allocateClassPair([NSError class], "TestClass", 0);
-    class_replaceMethod(<#Class  _Nullable __unsafe_unretained cls#>, <#SEL  _Nonnull name#>, <#IMP  _Nonnull imp#>, <#const char * _Nullable types#>)
-}
 
 
 
