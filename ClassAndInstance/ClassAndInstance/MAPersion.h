@@ -17,4 +17,9 @@
  age
  */
 @property (nonatomic, assign) NSInteger age;
+
+//- (void)doWork;
+
++ (void)doWork;
+
 @end

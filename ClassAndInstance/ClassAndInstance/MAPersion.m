@@ -10,4 +10,13 @@
 
 @implementation MAPersion
 
+////- (void)doWork
+//{
+//    
+//}
+
++ (void)doWork
+{
+    
+}
 @end
