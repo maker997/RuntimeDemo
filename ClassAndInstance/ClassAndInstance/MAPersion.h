@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MAPersion : NSObject
+@interface MAPersion : NSObject<NSCopying>
 /**
  name
  */
