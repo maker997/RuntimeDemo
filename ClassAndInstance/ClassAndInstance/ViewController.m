@@ -11,6 +11,7 @@
 #import <objc/runtime.h>
 #import <objc/objc.h>
 #import <objc/message.h>
+#import "NSObject+IvarList.h"
 
 @interface ViewController ()
 
@@ -33,6 +34,38 @@ void TestMetaClass(id self,SEL _cmd)
 
 @implementation ViewController
 
++ (void)load
+{
+    NSLog(@"%s---%d---",__func__,__LINE__);
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        SEL originSel = @selector(viewDidAppear:);
+        SEL swizzledSel = @selector(ma_viewDidAppear:);
+        
+        Method originMethod = class_getInstanceMethod(class, originSel);
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSel);
+        BOOL didAddMethod = class_addMethod(class, swizzledSel, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+        //if (didAddMethod)
+        //{
+            //添加成功,此类替换掉 sel 的实现
+            class_replaceMethod(class, originSel, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+            
+        //}else
+        //{
+            //添加方法失败, method交换方法的实现
+          //  method_exchangeImplementations(originMethod, swizzledMethod);
+        //}
+        
+    });
+}
+
++ (void)initialize
+{
+    [super initialize];
+    NSLog(@"%s---%d---",__func__,__LINE__);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -43,7 +76,9 @@ void TestMetaClass(id self,SEL _cmd)
     //[self testMethod];
     //[self testTypeEncode];
     //[self testStrongCopy];
-    [self testCopyAndMutableCopy:[MAPersion class] method:YES]; 
+    //[self testCopyAndMutableCopy:[MAPersion class] method:YES];
+    //[self testUnrecognizedSelector];
+    [self testIvarList];
 }
 
 /**
@@ -53,6 +88,7 @@ void TestMetaClass(id self,SEL _cmd)
 {
     Class newClass = objc_allocateClassPair([NSError class], "TestClass", 0);
     class_addMethod(newClass, @selector(testMetaClass), (IMP)TestMetaClass, "v@:");
+    //只能注册一次
     objc_registerClassPair(newClass);
     
     id instance = [[newClass alloc] initWithDomain:@"some domain" code:0 userInfo:nil];
@@ -123,13 +159,42 @@ static char mykey;
     NSLog(@"%s---%d---origin:%p copy:%p",__func__,__LINE__,ids,idsCopy);
 }
 
+/**
+ 通过 object 获取方法的实现
+ */
 - (void)testMsgSend
 {
     void (*setter)(id,SEL,BOOL);
     
     MAPersion *p = [MAPersion new];
     setter = (void (*)(id,SEL,BOOL)) [p methodForSelector:@selector(doWork)];
-    
+}
+
+/**
+ 测试消息转发
+ */
+- (void)testUnrecognizedSelector
+{
+    MAPersion *p = [MAPersion new];
+    [p performSelector:@selector(method2)];
+}
+
+- (void)testIvarList
+{
+    NSArray *ivarNames = [UIButton ivarList];
+    for (NSString *name in ivarNames)
+    {
+        NSLog(@"ivar: %@",name);
+    }
+}
+
+#pragma mark- private Method
+
+- (void)ma_viewDidAppear:(BOOL)animate
+{
+    //[self ma_viewDidAppear:animate];
+    [super viewDidAppear:YES];
+    NSLog(@"%s---%d---",__func__,__LINE__);
 }
 
 

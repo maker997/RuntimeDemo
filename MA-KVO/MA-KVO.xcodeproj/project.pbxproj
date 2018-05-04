@@ -7,35 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37A20CEC209AF491001F5F94 /* NSObject+IvarList.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A20CEB209AF491001F5F94 /* NSObject+IvarList.m */; };
-		37AE3A1B20900F0100322ED6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AE3A1A20900F0100322ED6 /* AppDelegate.m */; };
-		37AE3A1E20900F0100322ED6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AE3A1D20900F0100322ED6 /* ViewController.m */; };
-		37AE3A2120900F0100322ED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37AE3A1F20900F0100322ED6 /* Main.storyboard */; };
-		37AE3A2320900F0300322ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37AE3A2220900F0300322ED6 /* Assets.xcassets */; };
-		37AE3A2620900F0300322ED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37AE3A2420900F0300322ED6 /* LaunchScreen.storyboard */; };
-		37AE3A2920900F0300322ED6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AE3A2820900F0300322ED6 /* main.m */; };
-		37F632A920916DA7001199FD /* MAPersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F632A820916DA7001199FD /* MAPersion.m */; };
+		3781CF53209BF4B500482619 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781CF52209BF4B500482619 /* AppDelegate.m */; };
+		3781CF56209BF4B500482619 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781CF55209BF4B500482619 /* ViewController.m */; };
+		3781CF59209BF4B500482619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781CF57209BF4B500482619 /* Main.storyboard */; };
+		3781CF5B209BF4B900482619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3781CF5A209BF4B900482619 /* Assets.xcassets */; };
+		3781CF5E209BF4B900482619 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781CF5C209BF4B900482619 /* LaunchScreen.storyboard */; };
+		3781CF61209BF4B900482619 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781CF60209BF4B900482619 /* main.m */; };
+		3781CF69209BF59900482619 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781CF68209BF59900482619 /* NSObject+KVO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37A20CEA209AF491001F5F94 /* NSObject+IvarList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+IvarList.h"; sourceTree = "<group>"; };
-		37A20CEB209AF491001F5F94 /* NSObject+IvarList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IvarList.m"; sourceTree = "<group>"; };
-		37AE3A1620900F0100322ED6 /* ClassAndInstance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassAndInstance.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		37AE3A1920900F0100322ED6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		37AE3A1A20900F0100322ED6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		37AE3A1C20900F0100322ED6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		37AE3A1D20900F0100322ED6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		37AE3A2020900F0100322ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		37AE3A2220900F0300322ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		37AE3A2520900F0300322ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		37AE3A2720900F0300322ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37AE3A2820900F0300322ED6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		37F632A720916DA7001199FD /* MAPersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPersion.h; sourceTree = "<group>"; };
-		37F632A820916DA7001199FD /* MAPersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPersion.m; sourceTree = "<group>"; };
+		3781CF4E209BF4B500482619 /* MA-KVO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MA-KVO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3781CF51209BF4B500482619 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3781CF52209BF4B500482619 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3781CF54209BF4B500482619 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3781CF55209BF4B500482619 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3781CF58209BF4B500482619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3781CF5A209BF4B900482619 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3781CF5D209BF4B900482619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3781CF5F209BF4B900482619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3781CF60209BF4B900482619 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3781CF67209BF59900482619 /* NSObject+KVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		3781CF68209BF59900482619 /* NSObject+KVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		37AE3A1320900F0100322ED6 /* Frameworks */ = {
+		3781CF4B209BF4B500482619 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,77 +42,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37AE3A0D20900F0100322ED6 = {
+		3781CF45209BF4B500482619 = {
 			isa = PBXGroup;
 			children = (
-				37AE3A1820900F0100322ED6 /* ClassAndInstance */,
-				37AE3A1720900F0100322ED6 /* Products */,
+				3781CF50209BF4B500482619 /* MA-KVO */,
+				3781CF4F209BF4B500482619 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		37AE3A1720900F0100322ED6 /* Products */ = {
+		3781CF4F209BF4B500482619 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37AE3A1620900F0100322ED6 /* ClassAndInstance.app */,
+				3781CF4E209BF4B500482619 /* MA-KVO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		37AE3A1820900F0100322ED6 /* ClassAndInstance */ = {
+		3781CF50209BF4B500482619 /* MA-KVO */ = {
 			isa = PBXGroup;
 			children = (
-				37AE3A1920900F0100322ED6 /* AppDelegate.h */,
-				37AE3A1A20900F0100322ED6 /* AppDelegate.m */,
-				37AE3A1C20900F0100322ED6 /* ViewController.h */,
-				37AE3A1D20900F0100322ED6 /* ViewController.m */,
-				37F632A720916DA7001199FD /* MAPersion.h */,
-				37F632A820916DA7001199FD /* MAPersion.m */,
-				37A20CEA209AF491001F5F94 /* NSObject+IvarList.h */,
-				37A20CEB209AF491001F5F94 /* NSObject+IvarList.m */,
-				37AE3A1F20900F0100322ED6 /* Main.storyboard */,
-				37AE3A2220900F0300322ED6 /* Assets.xcassets */,
-				37AE3A2420900F0300322ED6 /* LaunchScreen.storyboard */,
-				37AE3A2720900F0300322ED6 /* Info.plist */,
-				37AE3A2820900F0300322ED6 /* main.m */,
+				3781CF51209BF4B500482619 /* AppDelegate.h */,
+				3781CF52209BF4B500482619 /* AppDelegate.m */,
+				3781CF54209BF4B500482619 /* ViewController.h */,
+				3781CF55209BF4B500482619 /* ViewController.m */,
+				3781CF67209BF59900482619 /* NSObject+KVO.h */,
+				3781CF68209BF59900482619 /* NSObject+KVO.m */,
+				3781CF57209BF4B500482619 /* Main.storyboard */,
+				3781CF5A209BF4B900482619 /* Assets.xcassets */,
+				3781CF5C209BF4B900482619 /* LaunchScreen.storyboard */,
+				3781CF5F209BF4B900482619 /* Info.plist */,
+				3781CF60209BF4B900482619 /* main.m */,
 			);
-			path = ClassAndInstance;
+			path = "MA-KVO";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37AE3A1520900F0100322ED6 /* ClassAndInstance */ = {
+		3781CF4D209BF4B500482619 /* MA-KVO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37AE3A2C20900F0300322ED6 /* Build configuration list for PBXNativeTarget "ClassAndInstance" */;
+			buildConfigurationList = 3781CF64209BF4B900482619 /* Build configuration list for PBXNativeTarget "MA-KVO" */;
 			buildPhases = (
-				37AE3A1220900F0100322ED6 /* Sources */,
-				37AE3A1320900F0100322ED6 /* Frameworks */,
-				37AE3A1420900F0100322ED6 /* Resources */,
+				3781CF4A209BF4B500482619 /* Sources */,
+				3781CF4B209BF4B500482619 /* Frameworks */,
+				3781CF4C209BF4B500482619 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ClassAndInstance;
-			productName = ClassAndInstance;
-			productReference = 37AE3A1620900F0100322ED6 /* ClassAndInstance.app */;
+			name = "MA-KVO";
+			productName = "MA-KVO";
+			productReference = 3781CF4E209BF4B500482619 /* MA-KVO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		37AE3A0E20900F0100322ED6 /* Project object */ = {
+		3781CF46209BF4B500482619 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "maker ";
 				TargetAttributes = {
-					37AE3A1520900F0100322ED6 = {
+					3781CF4D209BF4B500482619 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
-			buildConfigurationList = 37AE3A1120900F0100322ED6 /* Build configuration list for PBXProject "ClassAndInstance" */;
+			buildConfigurationList = 3781CF49209BF4B500482619 /* Build configuration list for PBXProject "MA-KVO" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,57 +118,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 37AE3A0D20900F0100322ED6;
-			productRefGroup = 37AE3A1720900F0100322ED6 /* Products */;
+			mainGroup = 3781CF45209BF4B500482619;
+			productRefGroup = 3781CF4F209BF4B500482619 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37AE3A1520900F0100322ED6 /* ClassAndInstance */,
+				3781CF4D209BF4B500482619 /* MA-KVO */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		37AE3A1420900F0100322ED6 /* Resources */ = {
+		3781CF4C209BF4B500482619 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37AE3A2620900F0300322ED6 /* LaunchScreen.storyboard in Resources */,
-				37AE3A2320900F0300322ED6 /* Assets.xcassets in Resources */,
-				37AE3A2120900F0100322ED6 /* Main.storyboard in Resources */,
+				3781CF5E209BF4B900482619 /* LaunchScreen.storyboard in Resources */,
+				3781CF5B209BF4B900482619 /* Assets.xcassets in Resources */,
+				3781CF59209BF4B500482619 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		37AE3A1220900F0100322ED6 /* Sources */ = {
+		3781CF4A209BF4B500482619 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37F632A920916DA7001199FD /* MAPersion.m in Sources */,
-				37AE3A1E20900F0100322ED6 /* ViewController.m in Sources */,
-				37AE3A2920900F0300322ED6 /* main.m in Sources */,
-				37A20CEC209AF491001F5F94 /* NSObject+IvarList.m in Sources */,
-				37AE3A1B20900F0100322ED6 /* AppDelegate.m in Sources */,
+				3781CF69209BF59900482619 /* NSObject+KVO.m in Sources */,
+				3781CF56209BF4B500482619 /* ViewController.m in Sources */,
+				3781CF61209BF4B900482619 /* main.m in Sources */,
+				3781CF53209BF4B500482619 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		37AE3A1F20900F0100322ED6 /* Main.storyboard */ = {
+		3781CF57209BF4B500482619 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				37AE3A2020900F0100322ED6 /* Base */,
+				3781CF58209BF4B500482619 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		37AE3A2420900F0300322ED6 /* LaunchScreen.storyboard */ = {
+		3781CF5C209BF4B900482619 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				37AE3A2520900F0300322ED6 /* Base */,
+				3781CF5D209BF4B900482619 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -181,7 +175,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		37AE3A2A20900F0300322ED6 /* Debug */ = {
+		3781CF62209BF4B900482619 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +233,7 @@
 			};
 			name = Debug;
 		};
-		37AE3A2B20900F0300322ED6 /* Release */ = {
+		3781CF63209BF4B900482619 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -291,35 +285,35 @@
 			};
 			name = Release;
 		};
-		37AE3A2D20900F0300322ED6 /* Debug */ = {
+		3781CF65209BF4B900482619 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KY98ADSRDF;
-				INFOPLIST_FILE = ClassAndInstance/Info.plist;
+				INFOPLIST_FILE = "MA-KVO/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maker997.ClassAndInstance;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maker997.MA-KVO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		37AE3A2E20900F0300322ED6 /* Release */ = {
+		3781CF66209BF4B900482619 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KY98ADSRDF;
-				INFOPLIST_FILE = ClassAndInstance/Info.plist;
+				INFOPLIST_FILE = "MA-KVO/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maker997.ClassAndInstance;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maker997.MA-KVO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -328,25 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37AE3A1120900F0100322ED6 /* Build configuration list for PBXProject "ClassAndInstance" */ = {
+		3781CF49209BF4B500482619 /* Build configuration list for PBXProject "MA-KVO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37AE3A2A20900F0300322ED6 /* Debug */,
-				37AE3A2B20900F0300322ED6 /* Release */,
+				3781CF62209BF4B900482619 /* Debug */,
+				3781CF63209BF4B900482619 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37AE3A2C20900F0300322ED6 /* Build configuration list for PBXNativeTarget "ClassAndInstance" */ = {
+		3781CF64209BF4B900482619 /* Build configuration list for PBXNativeTarget "MA-KVO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37AE3A2D20900F0300322ED6 /* Debug */,
-				37AE3A2E20900F0300322ED6 /* Release */,
+				3781CF65209BF4B900482619 /* Debug */,
+				3781CF66209BF4B900482619 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 37AE3A0E20900F0100322ED6 /* Project object */;
+	rootObject = 3781CF46209BF4B500482619 /* Project object */;
 }
